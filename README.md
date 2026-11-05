@@ -1,6 +1,9 @@
+
 # Sudoku Solver
 
-Dieses Projekt implementiert einen Sudoku-Solver in Java.
+Ein Sudoku-Solver in Java, der mithilfe eines rekursiven Backtracking-Algorithmus 9x9-Sudokus löst.
+
+Das Projekt wurde im Rahmen einer Hausübung im Studium Software Engineering und vernetzte Systeme entwickelt.
 
 ## Regeln
 
@@ -17,7 +20,7 @@ Das Sudoku kann über ein Menü eingegeben oder aus der Datei `input.csv` eingel
 
 Die CSV-Datei enthält neun Zeilen mit jeweils neun durch Kommas getrennten Zahlen.
 
-Beispiel:
+Beispiel (erste drei Zeilen):
 
 ```text
 5,3,0,0,7,0,0,0,0
@@ -31,7 +34,7 @@ Das Programm:
 
 1. liest ein Sudoku ein,
 2. überprüft, ob Zahlen an einer bestimmten Position gültig sind,
-3. löst das Sudoku mithilfe eines Lösungsalgorithmus,
+3. löst das Sudoku mithilfe von rekursivem Backtracking,
 4. gibt das gelöste Sudoku aus oder meldet, wenn keine Lösung existiert.
 
 Der Einstiegspunkt des Solvers ist:
@@ -39,3 +42,33 @@ Der Einstiegspunkt des Solvers ist:
 ```java
 public static int[][] solve(int[][] sudoku)
 ```
+
+## Installation und Ausführung
+
+### Voraussetzungen
+- Java JDK 17 oder neuer
+- Maven
+- IntelliJ IDEA oder eine andere Java-IDE
+
+
+### Programm starten
+
+1. Repository herunterladen oder klonen.
+2. Das Projekt in IntelliJ IDEA öffnen.
+3. Maven-Abhängigkeiten laden lassen.
+4. Die Klasse `Main.java` ausführen.
+
+Beim Start wird über `SudokuMenu.run()` das Menü geöffnet.
+
+Dort kann ein Sudoku eingegeben oder aus einer CSV-Datei eingelesen und anschließend gelöst werden.
+
+
+## Technologien
+
+- Java
+- Maven
+- JUnit
+
+## Dokumentation
+
+Weitere Informationen zur Datenstruktur, zum Backtracking-Algorithmus sowie zur Zeit- und Platzkomplexität befinden sich in der [Dokumentation](Dokumentation.md).
